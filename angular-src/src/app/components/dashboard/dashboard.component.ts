@@ -1,5 +1,4 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-// import { ScenegraphComponent } from './components/scenegraph/scenegraph.component';
 
 @Component({
   selector: 'app-dashboard',
