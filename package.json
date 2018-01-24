@@ -1,11 +1,11 @@
 {
-  "name": "mean-auth-app",
+  "name": "gamegrinders",
   "version": "1.0.0",
-  "description": "MEAN Auth app",
-  "main": "app.js",
+  "description": "GameGrinders",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app"
+    "start": "nodemon server.js"
   },
   "dependencies": {
     "bcryptjs": "*",
@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cali93/MEAN-Auth-app.git"
+    "url": "git+https://github.com/Cali93/GameGrinders.git"
   },
   "author": "Cali-dev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Cali93/MEAN-Auth-app/issues"
+    "url": "https://github.com/Cali93/GameGrinders/issues"
   },
-  "homepage": "https://github.com/Cali93/MEAN-Auth-app#readme"
+  "homepage": "https://github.com/Cali93/GameGrinders#readme"
 }
