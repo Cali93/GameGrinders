@@ -1,5 +1,7 @@
 <nav class="navbar navbar-default navbar-expand-md navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">G<span class="dag">ame</span><img class="navbrand" src="assets/imgs/gg.ico" alt="gg-logo">G<span class="dag">rinders</span></a>
+  <a class="navbar-brand btn" href="#"><img class="navbrand" src="assets/imgs/gg.ico" alt="gg-logo"><p>G<span class="dag">ame</span>
+    G<span class="dag">rinders</span></p>
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -8,27 +10,65 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto navbar-left">
       <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
-        <a class="nav-link" [routerLink]="['/']">Home</a>
+        <div class="btn-group" role="group">
+
+            <a class="nav-link btn btn-primary" [routerLink]="['/']"><i class="material-icons">home</i><p>Home</p></a>
+
+        </div>
+
       </li>
+
+      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <div class="btn-group" role="group">
+
+            <a class="nav-link btn btn-primary" [routerLink]="['/']"><i class="material-icons">games</i><p>Games</p></a>
+
+        </div>
+
+      </li>
+
     </ul>
 
     <ul class="navbar-nav navbar-right">
       <li *ngIf="authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
-        <a class="nav-link" [routerLink]="['/dashboard']">Dashboard</a>
-      </li>
-      <li *ngIf="authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
-        <a class="nav-link" [routerLink]="['/profile']">Profile</a>
-      </li>
-      <li *ngIf="!authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
-        <a class="nav-link" [routerLink]="['/register']">Register</a>
-      </li>
-      <li *ngIf="!authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
-        <a class="nav-link" [routerLink]="['/login']">Login</a>
+        <div class="btn-group" role="group">
+            <a class="nav-link btn btn-primary" [routerLink]="['/dashboard']">
+              <i class="material-icons">dashboard</i><p>Dashboard</p></a>
+        </div>
       </li>
 
       <li *ngIf="authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
-        <a class="nav-link" (click)="onLogoutClick()" href="#">Logout</a>
+        <div class="btn-group" role="group">
+
+            <a class="nav-link btn btn-primary" [routerLink]="['/profile']"><i class="material-icons">account_box</i><p>Profile</p></a>
+
+        </div>
       </li>
+
+      <li *ngIf="!authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <div class="btn-group" role="group">
+
+            <a class="nav-link btn btn-primary" [routerLink]="['/register']"><i class="material-icons">settings_input_hdmi</i><p>Register</p></a>
+
+        </div>
+      </li>
+
+      <li *ngIf="!authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <div class="btn-group" role="group">
+
+            <a class="nav-link btn btn-primary" [routerLink]="['/login']"><i class="material-icons">airplay</i><p>Login</p></a>
+
+        </div>
+      </li>
+
+      <li *ngIf="authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <div class="btn-group" role="group">
+
+            <a class="nav-link btn btn-primary" (click)="onLogoutClick()" href="#"><i class="material-icons">exit_to_app</i><p>Logout</p></a>
+
+        </div>
+      </li>
+
     </ul>
   </div>
 </nav>

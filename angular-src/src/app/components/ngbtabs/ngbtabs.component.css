@@ -9,7 +9,6 @@ input[type=checkbox] {
 input[type=checkbox] + label {
   display:inline-block;
   padding: 0 0 0 0px;
-
   max-height: 260px;
   max-width: 260px;;
   background-size: 50%;
