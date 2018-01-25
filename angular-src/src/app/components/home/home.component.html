@@ -1,6 +1,7 @@
 <div class="jumbotron text-center">
   <img class="homelogo" src="assets/imgs/gg.png" alt="gg-logo">
-  <h1>G<span class="dag">ame</span>G<span class="dag">rinders</span></h1>
+  <h1>G<span class="dag">ame</span>G<span class="dag">rinders</span>
+  </h1>
   <p class="lead">Welcome to the our community, join us to enhance your gaming experience !</p>
   <div>
     <a class="btn btn-primary" [routerLink]="['/register']">Register</a>
@@ -8,47 +9,81 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col-sd-12-md-6-lg-4">
-    <button class="btn btn-secondary slideIn" (click)="toggle()">
-      <h5>1.Choose your platforms</h5>
-    </button>
-    <ng-container *ngIf="show">
-      <input class="platform" id="pc" type="radio">
-      <label>
-        <img style="width:35px;height:35px;" src="assets/imgs/pcgame.png" alt="">
-      </label>
+<ngb-tabset>
+  <ngb-tab title="1. Choose your platforms :">
+    <ng-template ngbTabContent>
+      <ng-container>
+        <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" style="border-radius:20px;" src="assets/imgs/pc-game200.jpg">
+          </div>
+          <div class="card">
+            <img class="card-img-top" style="border-radius:24px;" src="assets/imgs/PS4-Logo-b.jpg" alt="Card image cap">
+          </div>
+          <div class="card">
+            <img class="card-img-top" style="border-radius:20px;" src="assets/imgs/xboxcard.gif" alt="Card image cap">
+          </div>
+          <div class="card">
+            <img class="card-img-top" style="border-radius:24px;" src="assets/imgs/mobiles.jpg" alt="Card image cap">
+          </div>
 
-      <input class="platform" id="ps4" type="radio">
-      <label>
-        <img style="width:60px;height:60px;" src="assets/imgs/ps4.jpg" alt="">
-      </label>
+        </div>
 
-      <input class="platform" id="xbox" type="radio">
-      <label>
-        <img style="width:50px;height:50px;" src="assets/imgs/xbox.svg" alt="ps4">
-      </label>
+      </ng-container>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab>
+    <ng-template ngbTabTitle>2.Choose your games</ng-template>
+    <ng-template ngbTabContent>
+      <div class="card-group">
+        <div class="card">
+          <img class="card-img-top" src="https://www.giftnix.com/giftnix/img/gift-cards/league-of-legends-gift-card-email-delivery.png"
+            alt="Card image cap">
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="https://www.giftnix.com/giftnix/img/gift-cards/league-of-legends-gift-card-email-delivery.png"
+            alt="Card image cap">
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="https://www.giftnix.com/giftnix/img/gift-cards/league-of-legends-gift-card-email-delivery.png"
+            alt="Card image cap">
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="https://www.giftnix.com/giftnix/img/gift-cards/league-of-legends-gift-card-email-delivery.png"
+            alt="Card image cap">
+        </div>
 
-      <input class="platform" id="other" type="radio">
-      <label>OTHER</label>
-      <select name="" id="">
-        <option>Mobile</option>
-        <option>Wii</option>
-        <option>Arcade</option>
-      </select>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <img class="card-img-top" src="https://www.giftnix.com/giftnix/img/gift-cards/league-of-legends-gift-card-email-delivery.png"
+            alt="Card image cap">
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="https://www.giftnix.com/giftnix/img/gift-cards/league-of-legends-gift-card-email-delivery.png"
+            alt="Card image cap">
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="https://www.giftnix.com/giftnix/img/gift-cards/league-of-legends-gift-card-email-delivery.png"
+            alt="Card image cap">
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="https://www.giftnix.com/giftnix/img/gift-cards/league-of-legends-gift-card-email-delivery.png"
+            alt="Card image cap">
+        </div>
 
-    </ng-container>
-  </div>
-
-  <div class="col-sd-12-md-6-lg-4">
-    <button class="btn btn-secondary slideIn2">
-      <h5>2.Choose your games</h5>
-    </button>
-  </div>
-
-  <div class="col-sd-12-md-6-lg-4">
-    <a class="btn btn-secondary slideIn3" [routerLink]="['/dashboard']">
-      <h5>3.Choose your mates &amp; Play !</h5>
-    </a>
-  </div>
-</div>
+      </div>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab title="3. Choose your mates &amp; play !">
+    <ng-template ngbTabContent>
+      <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi. Donec
+        egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio. Duis pharetra
+        et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna, egestas ut ipsum
+        vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec tristique ipsum euismod
+        facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et magnis dis parturient montes,
+        nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget neque. Phasellus nec tortor vel tellus
+        pulvinar feugiat.</p>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>

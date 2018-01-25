@@ -2,3 +2,15 @@
   width: 100px;
   height: 200px;
 }
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+input[type="checkbox"] + label {
+  background: url(http://xandeadx.ru/examples/styling-checkbox/checkbox-sprite.gif) 0 0 no-repeat;
+  padding-left: 20px;
+}
+input[type="checkbox"]:checked + label {
+  background-position: 0 -32px;
+}

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
@@ -17,6 +18,7 @@ import { ValidateService } from './services/validate.service';
 import { AuthService } from './services/auth.service';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { AuthGuard } from './guards/auth.guard';
+import { ModalComponent } from './components/modal/modal.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -33,7 +35,8 @@ const appRoutes: Routes = [
     RegisterComponent,
     HomeComponent,
     DashboardComponent,
-    ProfileComponent
+    ProfileComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
-    FlashMessagesModule.forRoot()
+    FlashMessagesModule.forRoot(),
+    NgbModule.forRoot()
   ],
   providers: [ValidateService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
