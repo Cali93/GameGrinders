@@ -12,7 +12,9 @@ exports.user_signup = (req, res, next) => {
     name: req.body.name,
     email: req.body.email,
     username: req.body.username,
-    password: req.body.password
+    password: req.body.password,
+    country:req.body.country,
+    language:req.body.language
   });
 
   User.addUser(newUser, (err, user) => {
@@ -59,7 +61,9 @@ exports.user_login = (req, res, next) => {
             id: user._id,
             name: user.name,
             username: user.username,
-            email: user.email
+            email: user.email,
+            country: user.country,
+            language: user.language
           }
         });
       } else {

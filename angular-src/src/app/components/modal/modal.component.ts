@@ -1,19 +1,11 @@
 import {Component, ViewEncapsulation} from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.css'],
-  encapsulation: ViewEncapsulation.None,
-  styles: [`
-    .dark-modal .modal-content {
-      background-color: #292b2c;
-      color: white;
-    }
-    .dark-modal .close {
-      color: white;
-    }
-  `]
+  encapsulation: ViewEncapsulation.None
 })
 export class ModalComponent {
   closeResult: string;
@@ -21,7 +13,7 @@ export class ModalComponent {
   constructor(private modalService: NgbModal) {}
 
   open(content) {
-    this.modalService.open(content, { windowClass: 'dark-modal' });
+    this.modalService.open('content', { windowClass: 'dark-modal' });
   }
 
 }
