@@ -1,17 +1,12 @@
-# Node Authentication API
-API for registering users with mongodb and authentication using a JWT (json web token). This app uses passport and passport-jwt and uses a JWT strategy
+# Game Grinders
 
-Version
-1.0.0
+Version: 1.0.0
 
-## Usage
-npm install
-npm start
+## Description of the project :
 
-### Endpoints
+Comming soon.
 
-POST /users/register
+## License :
 
-POST /users/authenticate   // Gives back a token
-
-GET /users/profile         // Needs json web token to authorize
+This project belongs to https://github.com/Cali93. 
+©2018 CaliDev
