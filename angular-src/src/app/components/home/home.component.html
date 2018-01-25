@@ -10,7 +10,7 @@
 
 <div class="row">
   <div class="col-sd-12-md-6-lg-4">
-    <button class="btn btn-secondary" (click)="toggle()">
+    <button class="btn btn-secondary slideIn" (click)="toggle()">
       <h5>1.Choose your platforms</h5>
     </button>
     <ng-container *ngIf="show">
@@ -41,13 +41,13 @@
   </div>
 
   <div class="col-sd-12-md-6-lg-4">
-    <button class="btn btn-secondary">
+    <button class="btn btn-secondary slideIn2">
       <h5>2.Choose your games</h5>
     </button>
   </div>
 
   <div class="col-sd-12-md-6-lg-4">
-    <a class="btn btn-secondary" [routerLink]="['/dashboard']">
+    <a class="btn btn-secondary slideIn3" [routerLink]="['/dashboard']">
       <h5>3.Choose your mates &amp; Play !</h5>
     </a>
   </div>

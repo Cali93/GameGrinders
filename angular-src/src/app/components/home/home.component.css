@@ -1,3 +1,7 @@
+.dag {
+  color:firebrick;
+}
+
 .hidden{
   display: none;
 }
@@ -5,8 +9,83 @@
 .homelogo{
   width: 200px;
   height: 200px;
+  animation-name: bounceIn;
+  animation-duration: 450ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
-.dag {
-  color:firebrick;
+.slideIn{
+  animation-name: bounceIn;
+  /* animation-iteration-count: 2; */
+  animation-duration: 800ms;
+  animation-direction: alternate; /* or: normal */
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.slideIn2{
+  animation-name: bounceIn;
+  /* animation-iteration-count: 2; */
+  animation-duration: 800ms;
+  animation-direction: alternate; /* or: normal */
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+.slideIn3{
+  animation-name: bounceIn;
+  /* animation-iteration-count: 2; */
+  animation-duration: 800ms;
+  animation-direction: alternate; /* or: normal */
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+}
+
+/* @-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+@keyframes bounceIn{
+  0%{
+    opacity: 0;
+    transform: scale(0.3) translate3d(0,0,0);
+
+  }
+  50%{
+    opacity: 0.9;
+    transform: scale(1.1);
+
+  }
+  80%{
+    opacity: 1;
+    transform: scale(0.89);
+
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1) translate3d(0,0,0);
+  }
 }

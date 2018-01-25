@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
+import { trigger, style, state, transition, animate, keyframes, stagger } from '@angular/animations';
 
 @Component({
   selector: 'app-profile',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  user:Object;
+  user: Object;
   constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit() {
