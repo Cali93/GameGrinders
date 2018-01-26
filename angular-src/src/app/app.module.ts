@@ -13,6 +13,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { GamesComponent } from './components/games/games.component';
 
 import { ValidateService } from './services/validate.service';
 import { AuthService } from './services/auth.service';
@@ -21,9 +22,19 @@ import { AuthGuard } from './guards/auth.guard';
 import { ModalComponent } from './components/modal/modal.component';
 import { NgbtabsComponent } from './components/ngbtabs/ngbtabs.component';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
+import { NgbgamestabComponent } from './components/ngbgamestab/ngbgamestab.component';
+import { PcgamesComponent } from './components/pcgames/pcgames.component';
+import { Ps4gamesComponent } from './components/ps4games/ps4games.component';
+import { XboxgamesComponent } from './components/xboxgames/xboxgames.component';
+import { MobilegamesComponent } from './components/mobilegames/mobilegames.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'games', component: GamesComponent},
+  {path: 'games/pc', component: PcgamesComponent},
+  {path: 'games/ps4', component: Ps4gamesComponent},
+  {path: 'games/xbox', component: XboxgamesComponent},
+  {path: 'games/mobile', component: MobilegamesComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},
   {path: 'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
@@ -36,11 +47,17 @@ const appRoutes: Routes = [
     LoginComponent,
     RegisterComponent,
     HomeComponent,
+    GamesComponent,
     DashboardComponent,
     ProfileComponent,
     ModalComponent,
     NgbtabsComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    NgbgamestabComponent,
+    PcgamesComponent,
+    Ps4gamesComponent,
+    XboxgamesComponent,
+    MobilegamesComponent
   ],
   imports: [
     BrowserModule,

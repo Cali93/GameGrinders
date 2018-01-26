@@ -1,0 +1,70 @@
+☐ HOME
+	☐ Créer content
+	✔ Product Name @done (2018-1-26 09:58:56)
+	✔ Product IMG @done (2018-1-26 09:58:57)
+	✔ Login/register @done (2018-1-26 09:58:58)
+	☐ About Game Grinders
+☐ Games
+	✔ Set route @done (2018-1-26 10:09:57)
+  ☐ What content do I will have here ?
+    STEP1 :
+    ☐ Banners platforms
+    STEP2 :
+    ☐ Games available on the relative platfrom
+		☐ I will be able to post my lobby's link
+    ☐ I will be able to talk to other players
+      ☐ List of the games to add :
+          - Overwatch
+          - FIFA
+          - Destiny
+          - GTA5
+          - ...
+☐ Dashboard (manager)
+	☐ What content do I will have here ?
+		☐ My main games & platforms
+		☐ My groups/teams
+		☐ My agenda
+		☐ My news
+
+☐ Profile (manager)
+	☐ What content do I will have here ?
+		☐ My main games & platforms
+		☐ Region & language
+		☐ My ratings
+		☐ My testimonials
+
+☐ Register
+	☐ Fix tabs form
+		☐ Improve images
+    ✔ Make inputs for games @done (2018-1-26 11:52:23)
+    ☐ Ajouter valeurs des inputs pour les platformes & jeux
+☐ Login
+  ☐ Improve page
+
+
+###Projects:
+
+* Anything with colon at the end of the line is a project title
+* You can nest projects inside each other
+* You can fold projects and sub projects
+###Tasks:
+
+New Task:
+    * Press Cmd+Enter (Ctrl+Enter on Windows and Linux) to add a new task
+    * You can also use the Command pallette to create a new task by typing To Do:New Task
+    * If you are on a new line, it will create a new task on the current line
+    * If you are on a line with some text pressing new task shortcut will convert it to a task
+    * New tasks are nested as much as the previous task
+
+More Actions:
+    * Complete a task by pressing Alt+d @done
+    * Re-open a completed task by pressing Alt+d
+    * Cancel a task by pressing Alt+c @cancelled
+    * Complete a cancelled task by pressing Alt+d
+    * You can also use the Command pallette to complete or cancel a task by typing
+      To Do:Complete Task or To Do:Cancel Task
+
+Tagging:
+    * You can add tags using @ sign, like this @tag
+    * You can use following pre-existing tags to mark tasks @critical @high @low @today
+    * Auto intellisense is provided to help you in finding tags

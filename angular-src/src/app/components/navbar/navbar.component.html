@@ -18,10 +18,10 @@
 
       </li>
 
-      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+      <li *ngIf="authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
         <div class="btn-group" role="group">
 
-            <a class="nav-link btn btn-primary" [routerLink]="['/']"><i class="material-icons">games</i><p>Games</p></a>
+            <a class="nav-link btn btn-primary" [routerLink]="['/games']"><i class="material-icons">games</i><p>Let's play</p></a>
 
         </div>
 

@@ -1,5 +1,6 @@
 import {Component, ViewEncapsulation} from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import { RegisterComponent } from '../register/register.component';
 
 @Component({
   selector: 'app-modal',
@@ -13,7 +14,7 @@ export class ModalComponent {
   constructor(private modalService: NgbModal) {}
 
   open(content) {
-    this.modalService.open('content', { windowClass: 'dark-modal' });
+    this.modalService.open(RegisterComponent, { windowClass: 'dark-modal' });
   }
 
 }
