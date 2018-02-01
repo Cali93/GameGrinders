@@ -28,6 +28,16 @@ import { Ps4gamesComponent } from './components/ps4games/ps4games.component';
 import { XboxgamesComponent } from './components/xboxgames/xboxgames.component';
 import { MobilegamesComponent } from './components/mobilegames/mobilegames.component';
 
+import { CsgoComponent } from './components/csgo/csgo.component';
+import { LolComponent } from './components/lol/lol.component';
+import { Gta5Component } from './components/gta5/gta5.component';
+import { PubgComponent } from './components/pubg/pubg.component';
+import { H1z1Component } from './components/h1z1/h1z1.component';
+import { DotaComponent } from './components/dota/dota.component';
+import { FortniteComponent } from './components/fortnite/fortnite.component';
+// import { ChatModule } from './chat/chat.module';
+import { ChatzModule } from './chatz/chatz.module';
+
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'games', component: GamesComponent},
@@ -35,6 +45,13 @@ const appRoutes: Routes = [
   {path: 'games/ps4', component: Ps4gamesComponent},
   {path: 'games/xbox', component: XboxgamesComponent},
   {path: 'games/mobile', component: MobilegamesComponent},
+  {path: 'games/pc/csgo', component: CsgoComponent},
+  {path: 'games/pc/lol', component: LolComponent},
+  {path: 'games/pc/fortnite', component: FortniteComponent},
+  {path: 'games/pc/gta5', component: Gta5Component},
+  {path: 'games/pc/pubg', component: PubgComponent},
+  {path: 'games/pc/h1z1', component: H1z1Component},
+  {path: 'games/pc/dota2', component: DotaComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},
   {path: 'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
@@ -57,7 +74,14 @@ const appRoutes: Routes = [
     PcgamesComponent,
     Ps4gamesComponent,
     XboxgamesComponent,
-    MobilegamesComponent
+    MobilegamesComponent,
+    CsgoComponent,
+    LolComponent,
+    Gta5Component,
+    PubgComponent,
+    H1z1Component,
+    DotaComponent,
+    FortniteComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +90,9 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes),
     FlashMessagesModule.forRoot(),
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    // ChatModule.forRoot(),
+    ChatzModule
   ],
   providers: [ValidateService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
